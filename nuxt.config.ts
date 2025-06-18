@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     ]
   },
   app: {
-    baseURL: '/',
+    baseURL: 'https://tpcode.pro',
     // baseURL: process.env.BASE_URL || '/',
     head: {
       title: 'TP Code - Web & Mobile Development Freelancers',
