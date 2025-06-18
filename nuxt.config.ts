@@ -2,6 +2,8 @@
 
 import tailwindcss from '@tailwindcss/vite'
 
+
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: false },
@@ -30,9 +32,9 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { 
-          name: 'description', 
-          content: 'Professional freelance web and mobile development services. Expert team specializing in modern web applications, mobile apps, and digital solutions.' 
+        {
+          name: 'description',
+          content: 'Professional freelance web and mobile development services. Expert team specializing in modern web applications, mobile apps, and digital solutions.'
         },
         {
           name: 'keywords',
@@ -40,46 +42,15 @@ export default defineNuxtConfig({
         },
         { name: 'author', content: 'TP Code' },
         { property: 'og:title', content: 'TP Code - Web & Mobile Development Freelancers' },
-        { 
-          property: 'og:description', 
-          content: 'Professional freelance web and mobile development services. Expert team specializing in modern web applications, mobile apps, and digital solutions.' 
+        {
+          property: 'og:description',
+          content: 'Professional freelance web and mobile development services. Expert team specializing in modern web applications, mobile apps, and digital solutions.'
         },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'theme-color', content: '#000000' },
         { name: 'msapplication-TileColor', content: '#000000' }
       ]
-    }
-  },
-
-  modules: ['@nuxtjs/i18n'],
-
-  i18n: {
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
-    strategy: 'no_prefix',
-    locales: [
-      {
-        code: 'pt',
-        iso: 'pt-BR',
-        name: 'Português',
-        file: 'pt.json'
-      },
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        file: 'en.json'
-      }
-    ],
-    lazy: true,
-    langDir: 'lang',
-    defaultLocale: 'pt',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root' // recommended
     }
   },
 })

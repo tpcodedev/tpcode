@@ -10,7 +10,7 @@
     >
       <span class="col-start-1 row-start-1 flex items-center gap-3 pr-6">
         <span class="size-5 shrink-0 rounded-full">{{ currentLocale === 'pt' ? '🇧🇷' : '🇺🇸' }}</span>
-        <span class="block truncate">{{ currentLocaleName }}</span>
+        <span class="block truncate">{{ currentLocaleName ?? 'Loading' }}</span>
       </span>
       <svg class="col-start-1 row-start-1 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
         <path fill-rule="evenodd" d="M5.22 10.22a.75.75 0 0 1 1.06 0L8 11.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-2.25 2.25a.75.75 0 0 1-1.06 0l-2.25-2.25a.75.75 0 0 1 0-1.06ZM10.78 5.78a.75.75 0 0 1-1.06 0L8 4.06 6.28 5.78a.75.75 0 0 1-1.06-1.06l2.25-2.25a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
@@ -48,17 +48,21 @@
 </template>
 
 <script setup>
-const { locale, locales, setLocale } = useI18n()
+
+import { useI18n } from 'vue-i18n'
+
+const { locale, t, locales, setLocale } = useI18n()
 
 const isOpen = ref(false)
 
 const currentLocale = computed(() => locale.value)
 const currentLocaleName = computed(() => {
-  const current = locales.value.find(l => l.code === locale.value)
+  if (!locales) return ''
+  const current = locales.value.find(l => l.code === locale.value) ?? undefined
   return current?.name || ''
 })
 
-const availableLocales = computed(() => locales.value)
+const availableLocales = computed(() => locales?.value)
 
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value
