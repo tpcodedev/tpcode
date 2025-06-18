@@ -1,20 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 import tailwindcss from '@tailwindcss/vite'
-
-
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'url'
+import VueI18nVitePlugin from '@intlify/unplugin-vue-i18n/vite'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
-
+  build: {
+    transpile: ['vue-i18n']
+  },
   vite: {
     plugins: [
       tailwindcss(),
-    ],
+      VueI18nVitePlugin({
+        include: [
+          resolve(dirname(fileURLToPath(import.meta.url)), './locales/*.json')
+        ]
+      })
+    ]
   },
-
   app: {
     baseURL: '/',
     // baseURL: process.env.BASE_URL || '/',

@@ -3,13 +3,15 @@ import pt from '../locales/pt.json'
 import en from '../locales/en.json'
 
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(({ vueApp }) => {
   const i18n = createI18n({
+    legacy: false,
     locale: 'pt',
     fallbackLocale: 'pt',
     globalInjection: true,
     messages: { pt, en }
   })
 
-  nuxtApp.vueApp.use(i18n)
+  vueApp.use(i18n)
 })
+
