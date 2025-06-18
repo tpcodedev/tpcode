@@ -3,10 +3,10 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-          {{ $t('services.title') }}
+          {{ t('services.title') }}
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          {{ $t('services.subtitle') }}
+          {{ t('services.subtitle') }}
         </p>
       </div>
       
@@ -17,10 +17,10 @@
             <CodeBracketIcon class="h-8 w-8 text-white" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ $t('services.web.title') }}
+            {{ t('services.web.title') }}
           </h3>
           <p class="text-gray-600 leading-relaxed">
-            {{ $t('services.web.description') }}
+            {{ t('services.web.description') }}
           </p>
         </div>
         
@@ -30,10 +30,10 @@
             <DevicePhoneMobileIcon class="h-8 w-8 text-white" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ $t('services.mobile.title') }}
+            {{ t('services.mobile.title') }}
           </h3>
           <p class="text-gray-600 leading-relaxed">
-            {{ $t('services.mobile.description') }}
+            {{ t('services.mobile.description') }}
           </p>
         </div>
         
@@ -43,10 +43,10 @@
             <LightBulbIcon class="h-8 w-8 text-white" />
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-4">
-            {{ $t('services.consulting.title') }}
+            {{ t('services.consulting.title') }}
           </h3>
           <p class="text-gray-600 leading-relaxed">
-            {{ $t('services.consulting.description') }}
+            {{ t('services.consulting.description') }}
           </p>
         </div>
       </div>
@@ -56,4 +56,8 @@
 
 <script setup>
 import { CodeBracketIcon, DevicePhoneMobileIcon, LightBulbIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 </script>

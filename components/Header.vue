@@ -11,9 +11,9 @@
         
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#services" class="nav-link">{{ $t('nav.services') }}</a>
-          <a href="#about" class="nav-link">{{ $t('nav.about') }}</a>
-          <a href="#contact" class="nav-link">{{ $t('nav.contact') }}</a>
+          <a href="#services" class="nav-link">{{ t('nav.services') }}</a>
+          <a href="#about" class="nav-link">{{ t('nav.about') }}</a>
+          <a href="#contact" class="nav-link">{{ t('nav.contact') }}</a>
         </div>
         
         <!-- Language switcher -->
@@ -42,9 +42,9 @@
       >
         <div v-if="isMobileMenuOpen" class="md:hidden py-4 border-t border-gray-200">
           <div class="flex flex-col space-y-4">
-            <a href="#services" @click="closeMobileMenu" class="nav-link-mobile">{{ $t('nav.services') }}</a>
-            <a href="#about" @click="closeMobileMenu" class="nav-link-mobile">{{ $t('nav.about') }}</a>
-            <a href="#contact" @click="closeMobileMenu" class="nav-link-mobile">{{ $t('nav.contact') }}</a>
+            <a href="#services" @click="closeMobileMenu" class="nav-link-mobile">{{ t('nav.services') }}</a>
+            <a href="#about" @click="closeMobileMenu" class="nav-link-mobile">{{ t('nav.about') }}</a>
+            <a href="#contact" @click="closeMobileMenu" class="nav-link-mobile">{{ t('nav.contact') }}</a>
           </div>
         </div>
       </Transition>
@@ -54,6 +54,9 @@
 
 <script setup>
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const isMobileMenuOpen = ref(false)
 

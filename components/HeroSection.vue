@@ -10,20 +10,20 @@
       <div class="max-w-4xl mx-auto text-center">
         <!-- Main heading -->
         <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in sm:mt-6">
-          <span class="text-gradient">{{ $t('hero.title') }}</span>
+          <span class="text-gradient">{{ t('hero.title') }}</span>
           <br>
-          <span class="text-gray-800">{{ $t('hero.subtitle') }}</span>
+          <span class="text-gray-800">{{ t('hero.subtitle') }}</span>
         </h1>
         
         <!-- Description -->
         <p class="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-200">
-          {{ $t('hero.description') }}
+          {{ t('hero.description') }}
         </p>
         
         <!-- Tech stack indicators -->
         <div class="mt-16 animate-fade-in animation-delay-400">
           <p class="text-sm text-gray-500 mb-6 uppercase tracking-wider font-semibold">
-            {{ $t('hero.stack') }}
+            {{ t('hero.stack') }}
           </p>
           <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
             <div class="tech-badge">DotNet C#</div>
@@ -48,6 +48,10 @@
 
 <script setup>
 import { ChevronDownIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 </script>
 
 <style scoped>
