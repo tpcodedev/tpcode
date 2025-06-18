@@ -1,0 +1,60 @@
+{
+  "lang": "en-US",
+  "meta": {
+    "title": "TP Code - Web & Mobile Development Freelancers",
+    "description": "Professional freelance web and mobile development services. Expert team specializing in modern web applications, mobile apps, and digital solutions."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Web & Mobile Development",
+    "subtitle": "Professional Freelancers",
+    "description": "We transform your ideas into innovative digital solutions. Specialized in modern web development and high-quality mobile applications.",
+    "cta": "Start Project",
+    "cta_secondary": "View Portfolio",
+    "stack": "Technologies we domain"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for your digital needs",
+    "web": {
+      "title": "Web Development",
+      "description": "Responsive websites and web applications using the latest technologies like Vue.js, DotNet C# and Node.js."
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "description": "Native and hybrid apps for iOS and Android with Flutter, Capacitor, and other technologies."
+    },
+    "consulting": {
+      "title": "Technical Consulting",
+      "description": "Strategic guidance on software architecture, technology selection, and performance optimization."
+    }
+  },
+  "about": {
+    "title": "About TP Code",
+    "description": "We are a team of freelance developers passionate about technology, dedicated to delivering excellent digital solutions. With experience in diverse projects, we combine creativity and technique to exceed expectations.",
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "clients": "Satisfied Clients"
+  },
+  "contact": {
+    "title": "Let's Talk?",
+    "subtitle": "Get in touch with us through our social media",
+    "description": "We're always ready to discuss your next project. Follow us on social media or contact us directly.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 TP Code. All rights reserved.",
+    "developed": "Developed with"
+  }
+}

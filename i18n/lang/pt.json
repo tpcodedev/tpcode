@@ -1,0 +1,60 @@
+{
+  "lang": "pt-BR",
+  "meta": {
+    "title": "TP Code - Desenvolvedores Web & Mobile Freelancers",
+    "description": "Serviços profissionais de desenvolvimento web e mobile freelance. Equipe especializada em aplicações web modernas, apps mobile e soluções digitais."
+  },
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Desenvolvimento Web & Mobile",
+    "subtitle": "Freelancers Profissionais",
+    "description": "Transformamos suas ideias em soluções digitais inovadoras. Especializados em desenvolvimento web moderno e aplicativos mobile de alta qualidade.",
+    "cta": "Começar Projeto",
+    "cta_secondary": "Ver Portfólio",
+    "stack": "Tecnologias que Dominamos"
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções completas para suas necessidades digitais",
+    "web": {
+      "title": "Desenvolvimento Web",
+      "description": "Sites e aplicações web responsivas usando as tecnologias mais modernas como Vue.js, DotNet C# e Node.js."
+    },
+    "mobile": {
+      "title": "Desenvolvimento Mobile",
+      "description": "Apps nativos e híbridos para iOS e Android com Flutter, Capacitor e outras tecnologias."
+    },
+    "consulting": {
+      "title": "Consultoria Técnica",
+      "description": "Orientação estratégica em arquitetura de software, escolha de tecnologias e otimização de performance."
+    }
+  },
+  "about": {
+    "title": "Sobre a TP Code",
+    "description": "Somos uma equipe de desenvolvedores freelancers apaixonados por tecnologia, dedicados a entregar soluções digitais de excelência. Com experiência em projetos diversos, combinamos criatividade e técnica para superar expectativas.",
+    "experience": "Anos de Experiência",
+    "projects": "Projetos Concluídos",
+    "clients": "Clientes Satisfeitos"
+  },
+  "contact": {
+    "title": "Vamos Conversar?",
+    "subtitle": "Entre em contato conosco através das nossas redes sociais",
+    "description": "Estamos sempre prontos para discutir seu próximo projeto. Siga-nos nas redes sociais ou entre em contato diretamente.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 TP Code. Todos os direitos reservados.",
+    "developed": "Desenvolvido com"
+  }
+}
